@@ -5,6 +5,12 @@ ComfyUI Custom Node for HeartMuLa AI Music Generation and Transcript Text
 https://github.com/HeartMuLa/heartlib
 
 
+<img width="1418" height="595" alt="image" src="https://github.com/user-attachments/assets/44f4b065-bfe0-405d-8324-e10f5c60b320" />
+
+
+<img width="1396" height="916" alt="image" src="https://github.com/user-attachments/assets/134a7776-6805-42a8-9e49-5852e8ee3ba9" />
+
+
 ------------------------------------------------------------
 
 # Installation
@@ -83,6 +89,11 @@ HeartMuLa-oss-3B: https://huggingface.co/HeartMuLa/HeartMuLa-oss-3B
 HeartCodec-oss: https://huggingface.co/HeartMuLa/HeartCodec-oss
 
 HeartTranscriptor-oss: https://huggingface.co/HeartMuLa/HeartTranscriptor-oss
+
+
+
+
+
 
 
 Credits

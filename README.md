@@ -26,6 +26,7 @@ We are not providing service here, we are group of hobbiests, developers who wan
 
 ------------------------------------------------------------
 2026-01-21 (3)
+- Integrated Native Progress Bar: Replaced tqdm with comfy.utils.ProgressBar for real-time progress tracking in the UI.
 - Precise Temperature: Refined temperature step to 0.01 for more granular control over generation.
 - Intuitive Audio Length: Renamed parameter to max_audio_length_seconds (Default: 240s) for better usability.
 

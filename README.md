@@ -64,6 +64,17 @@ cd /HeartMuLa_ComfyUI
 
 pip install -r requirements.txt
 
+If no module name error pop up.
+some libraries might need to install Individually (For Windows users you need use Command Prompt as Administrator)
+
+do this :
+
+pip install soundfile
+
+pip install torchtune
+
+pip install torchao
+
 ------------------------------------------------------------
 
 # For File structure

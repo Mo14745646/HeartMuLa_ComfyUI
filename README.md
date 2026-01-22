@@ -37,7 +37,8 @@ Thank you <a href="https://github.com/IuraHD">IuraHD</a> update!
 
 - some information about FP4 Computing here : [FP4 Compute](https://github.com/benjiyaya/HeartMuLa_ComfyUI/blob/main/README_FP4.md)
 
-<img width="1162" height="688" alt="Screenshot 2026-01-22 214011" src="https://github.com/user-attachments/assets/6cfc7a10-40b4-4758-83df-f82359ad6d5a" />
+<img width="1144" height="639" alt="image" src="https://github.com/user-attachments/assets/0bc79126-c37b-4ad0-8e70-947172e49d5d" />
+
 
 
 2026-01-21 (3)

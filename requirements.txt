@@ -10,3 +10,6 @@ accelerate>=1.0.0
 numpy
 protobuf
 omegaconf
+bitsandbytes
+torch
+torchcodec

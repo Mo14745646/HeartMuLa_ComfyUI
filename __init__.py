@@ -9,6 +9,7 @@ import gc
 import folder_paths
 import logging
 import warnings
+from transformers import BitsAndBytesConfig
 
 os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 
@@ -22,6 +23,7 @@ if util_dir not in sys.path:
     sys.path.insert(0, util_dir)
 
 folder_paths.add_model_folder_path("HeartMuLa", os.path.join(folder_paths.models_dir, "HeartMuLa"))
+folder_paths.add_model_folder_path("HeartMuLa", os.path.join(current_dir, "util", "heartlib", "ckpt"))
 
 def get_model_base_dir():
     paths = folder_paths.get_folder_paths("HeartMuLa")
@@ -43,19 +45,41 @@ class HeartMuLaModelManager:
             cls._instance = super(HeartMuLaModelManager, cls).__new__(cls)
         return cls._instance
 
-    def get_gen_pipeline(self, version="3B"):
-        if version not in self._gen_pipes:
+    def get_gen_pipeline(self, version="3B", quantize_4bit=False):
+        key = (version, quantize_4bit)
+        if key not in self._gen_pipes:
             from heartlib import HeartMuLaGenPipeline
-            self._gen_pipes[version] = HeartMuLaGenPipeline.from_pretrained(
+            
+            bnb_config = None
+            if quantize_4bit:
+                quant_type = "nf4"
+                if torch.cuda.is_available():
+                    try:
+                        major, _ = torch.cuda.get_device_capability()
+                        if major >= 10:
+                            quant_type = "fp4"
+                            print(f"HeartMuLa: Detected Blackwell GPU (Compute {major}.x), using native FP4 quantization.")
+                    except:
+                        pass
+
+                bnb_config = BitsAndBytesConfig(
+                    load_in_4bit=True,
+                    bnb_4bit_quant_type=quant_type,
+                    bnb_4bit_compute_dtype=torch.bfloat16,
+                    bnb_4bit_use_double_quant=True,
+                )
+
+            self._gen_pipes[key] = HeartMuLaGenPipeline.from_pretrained(
                 MODEL_BASE_DIR,
                 device=self._device,
                 torch_dtype=torch.bfloat16,
                 version=version,
-                lazy_load=True
+                lazy_load=True,
+                bnb_config=bnb_config
             )
             torch.cuda.empty_cache()
             gc.collect()
-        return self._gen_pipes[version]
+        return self._gen_pipes[key]
 
     def get_transcribe_pipeline(self):
         if self._transcribe_pipe is None:
@@ -82,6 +106,7 @@ class HeartMuLa_Generate:
                 "cfg_scale": ("FLOAT", {"default": 1.5, "min": 1.0, "max": 10.0, "step": 0.1}),
                 "keep_model_loaded": ("BOOLEAN", {"default": True}),
                 "offload_mode": (["auto", "aggressive"], {"default": "auto"}),
+                "quantize_4bit": ("BOOLEAN", {"default": False}),
             }
         }
 
@@ -90,7 +115,7 @@ class HeartMuLa_Generate:
     FUNCTION = "generate"
     CATEGORY = "HeartMuLa"
 
-    def generate(self, lyrics, tags, version, seed, max_audio_length_seconds, topk, temperature, cfg_scale, keep_model_loaded, offload_mode="auto"):
+    def generate(self, lyrics, tags, version, seed, max_audio_length_seconds, topk, temperature, cfg_scale, keep_model_loaded, offload_mode="auto", quantize_4bit=False):
         torch.manual_seed(seed)
         torch.cuda.manual_seed(seed)
         np.random.seed(seed & 0xFFFFFFFF)
@@ -98,7 +123,7 @@ class HeartMuLa_Generate:
         max_audio_length_ms = int(max_audio_length_seconds * 1000)
 
         manager = HeartMuLaModelManager()
-        pipe = manager.get_gen_pipeline(version)
+        pipe = manager.get_gen_pipeline(version, quantize_4bit=quantize_4bit)
 
         output_dir = folder_paths.get_output_directory()
         os.makedirs(output_dir, exist_ok=True)
@@ -218,5 +243,6 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "HeartMuLa_Generate": "HeartMuLa Music Generator",
     "HeartMuLa_Transcribe": "HeartMuLa Lyrics Transcriber",
 }
+
 
 __all__ = ['NODE_CLASS_MAPPINGS', 'NODE_DISPLAY_NAME_MAPPINGS']

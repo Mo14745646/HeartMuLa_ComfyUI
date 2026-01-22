@@ -8,9 +8,14 @@ https://github.com/HeartMuLa/heartlib
 How To Use this In Basic: https://youtu.be/F9LFAeUbBIs
 
 
+Features - Music Generation
+
+<img width="1826" height="1016" alt="Screenshot 2026-01-22 214655" src="https://github.com/user-attachments/assets/cbdce761-8952-4ce1-b667-17e8e59db96c" />
+
+Lyrics Transcript
+
 <img width="1418" height="595" alt="image" src="https://github.com/user-attachments/assets/44f4b065-bfe0-405d-8324-e10f5c60b320" />
 
-<img width="1737" height="744" alt="e48e0c00-70eb-4ee3-b578-784ff92b1d0c" src="https://github.com/user-attachments/assets/284be3a9-c5ab-402c-a617-fc447b83324b" />
 
 ------------------------------------------------------------
 **Message**
@@ -24,6 +29,15 @@ We are not providing service here, we are group of hobbiests, developers who wan
 **Update:**
 
 ------------------------------------------------------------
+2026-01-22 :
+Feature: 4-bit Quantization (FP4/NF4) with Native Blackwell Detection
+Thank you <a href="https://github.com/IuraHD">IuraHD</a> update!
+
+- some information about FP4 Computing here : [FP4 Compute](https://github.com/benjiyaya/HeartMuLa_ComfyUI/blob/main/README_FP4.md)
+
+<img width="1162" height="688" alt="Screenshot 2026-01-22 214011" src="https://github.com/user-attachments/assets/6cfc7a10-40b4-4758-83df-f82359ad6d5a" />
+
+
 2026-01-21 (3)
 - Integrates native progress bars, making it easy to implement real-time progress tracking in the user interface.
 - Precise Temperature: Refined temperature step to 0.01 for more granular control over generation.

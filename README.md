@@ -99,6 +99,9 @@ pip install torchtune
 
 pip install torchao
 
+For Windows User, Download a "full-shared" build of FFmpeg. Ensure you extract it and add the bin folder (containing the .dll files) to your system Path. 
+https://github.com/GyanD/codexffmpeg/releases/tag/8.0.1
+
 ------------------------------------------------------------
 
 # For File structure

